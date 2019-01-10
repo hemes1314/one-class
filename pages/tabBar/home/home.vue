@@ -1,31 +1,34 @@
 <template>
 	<view>
-		<view class="uni-flex uni-row">
-			<view class="text" style="width: 80upx;height: 80upx;display: flex; justify-content: center;align-items: center;">
-				<image src="../../../static/tips.png" style="width: 80upx;height: 80upx;"></image>
-			</view>
-			<view class="uni-flex uni-column" style="flex: 1;justify-content: space-between;">
-				<view class="uni-flex uni-row" style="height: 40upx; justify-content: space-between;">
-					<view class="text" style="flex-shrink: 1; font-weight: bold; align-items: center;">1111111111</view>
-					<view class="text" style="flex-shrink: 0; font-size: 10px; text-align: right; align-items: center; color: grey;">0/1完成</view>
+		<view class="uni-list">
+			<view class="uni-list-cell" hover-class="uni-list-cell-hover">
+				<view class="uni-media-list">
+					<view class="uni-media-list-logo">
+						<image v-if="showImg" :src="img_src"></image>
+					</view>
+					<view class="uni-media-list-body">
+						<view class="uni-media-list-text-top">111</view>
+						<view class="uni-media-list-text-top-right">1/2</view>
+						<view class="uni-media-list-text-bottom uni-ellipsis">222222</view>
+					</view>
 				</view>
-				<view class="text" style="text-align: left; font-size: 10px; align-items: center; color: grey;">
-					222222222222222222222
+			</view>
+			<view class="uni-list-cell" hover-class="uni-list-cell-hover">
+				<view class="uni-list-cell-navigate">
+					<view class="uni-media-list-logo">
+						<image v-if="showImg" :src="img_src"></image>
+					</view>
+					<view class="uni-media-list-body">
+						<view class="uni-media-list-text-top">111</view>
+						<view class="uni-media-list-text-top-right">1/2</view>
+						<view class="uni-media-list-text-bottom uni-ellipsis">222222</view>
+					</view>
 				</view>
 			</view>
 		</view>
-		<view class="uni-flex uni-row">
-			<view class="text" style="width: 80upx;height: 80upx;display: flex; justify-content: center;align-items: center;">
-				<image src="../../../static/tips.png" style="width: 80upx;height: 80upx;"></image>
-			</view>
-			<view class="uni-flex uni-column" style="flex: 1;justify-content: space-between;">
-				<view class="uni-flex uni-row" style="height: 40upx; justify-content: space-between;">
-					<view class="text" style="flex-shrink: 1; font-weight: bold; align-items: center;">1111111111</view>
-					<view class="text" style="flex-shrink: 0; font-size: 10px; text-align: right; align-items: center; color: grey;">0/1完成</view>
-				</view>
-				<view class="text" style="text-align: left; font-size: 10px; align-items: center; color: grey;">
-					222222222222222222222
-				</view>
+		<view>
+			<view class="uni-media-list-text-bottom-right">
+				<image style="width: 100upx; height: 100upx;" src="../../../static/add.png"></image>
 			</view>
 		</view>
 	</view>
@@ -34,29 +37,37 @@
 	export default {
 		data() {
 			return {
-				lists: [
-				]
+				img_src: "/static/tips.png",
+				showImg: false
 			}
 		},
 		onLoad() {
-		},
-		onShareAppMessage() {
-			return {
-			
-			}
-		},
-		onNavigationBarButtonTap(e) {
-			
-		},
-		methods: {
+			setTimeout(() => {
+				this.showImg = true;
+			}, 400)
 		}
 	}
 </script>
 
 <style>
-	page{
-		height: auto;
-		min-height: 100%;
-		font-size: 12px;
+	uni-image {
+		width: 80%;
+		height: 80%;
+	}
+	.uni-media-list-text-top-right {
+		font-family: uniicons;
+		content: '1/2';
+		position: absolute;
+		right: 11px;
+		top: 30%;
+		color: #bbb;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.uni-media-list-text-bottom-right {
+		position: absolute;
+		right: 11px;
+		bottom: 0%;
 	}
 </style>

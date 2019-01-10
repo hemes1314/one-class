@@ -1,0 +1,6 @@
+
+.uni-media-list-text-bottom-right {
+  position: absolute;
+  right: 11px;
+  bottom: 0%;
+}

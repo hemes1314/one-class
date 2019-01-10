@@ -1,0 +1,9 @@
+<template name="5fb823f6">
+  <view class="_view data-v-ee422bde">
+    <view class="_view data-v-ee422bde">
+      <view class="_view data-v-ee422bde uni-media-list-text-bottom-right">
+        <image style="width: 100rpx; height: 100rpx;" src="../../../static/add.png" class="_image data-v-ee422bde"></image>
+      </view>
+    </view>
+  </view>
+</template>

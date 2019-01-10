@@ -1,0 +1,41 @@
+<template name="52d09e90">
+  <view class="_view data-v-7bb4e11e center">
+    <view class="_view data-v-7bb4e11e uni-list">
+      <view class="_view data-v-7bb4e11e uni-list-cell" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-7bb4e11e uni-media-list">
+          <view class="_view data-v-7bb4e11e uni-media-list-logo">
+            <image wx:if="{{showImg}}" src="{{avatarUrl}}" class="_image data-v-7bb4e11e"></image>
+          </view>
+          <view class="_view data-v-7bb4e11e uni-media-list-body">
+            <view class="_view data-v-7bb4e11e uni-media-list-text-top">聆风 班主任</view>
+            <view class="_view data-v-7bb4e11e uni-media-list-text-bottom uni-ellipsis">莲葩园 幼儿园19届01班</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-7bb4e11e center-list">
+      <view class="_view data-v-7bb4e11e center-list-item border-bottom">
+        <text class="_text data-v-7bb4e11e list-icon" style="color: #D5CC39;"></text>
+        <text class="_text data-v-7bb4e11e list-text">组建班级</text>
+        <text class="_text data-v-7bb4e11e navigat-arrow"></text>
+      </view>
+      <view class="_view data-v-7bb4e11e center-list-item border-bottom">
+        <text class="_text data-v-7bb4e11e list-icon" style="color: #DB973E;"></text>
+        <text class="_text data-v-7bb4e11e list-text">成员管理</text>
+        <text class="_text data-v-7bb4e11e navigat-arrow"></text>
+      </view>
+      <view class="_view data-v-7bb4e11e center-list-item">
+        <text class="_text data-v-7bb4e11e list-icon" style="color: #4986D8;"></text>
+        <text class="_text data-v-7bb4e11e list-text">帮助中心</text>
+        <text class="_text data-v-7bb4e11e navigat-arrow"></text>
+      </view>
+    </view>
+    <view class="_view data-v-7bb4e11e center-list">
+      <view class="_view data-v-7bb4e11e center-list-item">
+        <text class="_text data-v-7bb4e11e list-icon" style="color: #07CD3E;"></text>
+        <text class="_text data-v-7bb4e11e list-text">切换账号</text>
+        <text class="_text data-v-7bb4e11e navigat-arrow"></text>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,35 @@
+<template name="77d15610">
+  <view class="_view data-v-31b3721e">
+    <view class="_view data-v-31b3721e uni-list">
+      <view class="_view data-v-31b3721e uni-list-cell" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-31b3721e uni-media-list">
+          <view class="_view data-v-31b3721e uni-media-list-logo">
+            <image wx:if="{{showImg}}" src="{{img_src}}" class="_image data-v-31b3721e"></image>
+          </view>
+          <view class="_view data-v-31b3721e uni-media-list-body">
+            <view class="_view data-v-31b3721e uni-media-list-text-top">111</view>
+            <view class="_view data-v-31b3721e uni-media-list-text-top-right">1/2</view>
+            <view class="_view data-v-31b3721e uni-media-list-text-bottom uni-ellipsis">222222</view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-31b3721e uni-list-cell" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-31b3721e uni-list-cell-navigate">
+          <view class="_view data-v-31b3721e uni-media-list-logo">
+            <image wx:if="{{showImg}}" src="{{img_src}}" class="_image data-v-31b3721e"></image>
+          </view>
+          <view class="_view data-v-31b3721e uni-media-list-body">
+            <view class="_view data-v-31b3721e uni-media-list-text-top">111</view>
+            <view class="_view data-v-31b3721e uni-media-list-text-top-right">1/2</view>
+            <view class="_view data-v-31b3721e uni-media-list-text-bottom uni-ellipsis">222222</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-31b3721e">
+      <view class="_view data-v-31b3721e uni-media-list-text-bottom-right">
+        <image style="width: 100rpx; height: 100rpx;" src="../../../static/add.png" class="_image data-v-31b3721e"></image>
+      </view>
+    </view>
+  </view>
+</template>

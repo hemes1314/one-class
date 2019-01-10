@@ -1,0 +1,20 @@
+
+uni-image {
+  width: 80%;
+  height: 80%;
+}
+.uni-media-list-text-top-right {
+  font-family: uniicons;
+  content: '1/2';
+  position: absolute;
+  right: 11px;
+  top: 30%;
+  color: #bbb;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.uni-media-list-text-bottom-right {
+  position: absolute;
+  right: 11px;
+  bottom: 0%;
+}
